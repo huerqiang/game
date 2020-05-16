@@ -4,6 +4,7 @@
 #' @export
 guess <- function() {
     n <- round(stats::runif(1,min=1,max=50))
+## 随便增加一行
     messages <- "我做了一个猜数字的游戏，你想玩一玩吗"
     button2 <- tcltk::tkmessageBox(title='Message', message=messages, type='yesno')
     button2 <- tcltk::tclvalue(button2)
